@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Circle logo Animation</title>
+</head>
+<body>
+    <div class="circle">
+        <img class="logo"></img>
+       
+        <div class="text">
+            <p>Henricky Lima - Web Developer - Frontend - </p>
+        </div>
+    </div>
+    <!-- <button>mudar</button> -->
+</body>
+<script>
+    const text = document.querySelector('.text p')
+    const logo = document.querySelector('.logo')
+    let i = 0
+    text.innerHTML = text.innerText.split('').map((char,i)=>
+        `<span style="transform: rotate(${i*8.5}deg);">${char}</span>`
+        ).join("")
+
+
+    // const bt = document.querySelector('button')
+    // bt.addEventListener("click",e=>{
+    //     i= (i+1)%4+1;
+    //     logo.src = `img${i}.png`
+    // })
+
+</script>
+</html>
