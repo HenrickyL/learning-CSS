@@ -13,4 +13,7 @@
   - [reference](https://fontawesome.com/v5/docs/web/use-with/react)
 
 
+![](public/demo.gif)
+
+
 reference: [CSS Glassmorphism Cards Hover Effects - @OnlineTutorialsYT](https://www.youtube.com/watch?v=tLWaDbpw-LI)
