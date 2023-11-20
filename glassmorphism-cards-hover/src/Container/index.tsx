@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import {ContainerWrapper} from './style'
 type ContainerProps = {
-    children: ReactNode; 
+    children?: ReactNode; 
 };
 
 const Container : React.FC<ContainerProps>= ({children}:ContainerProps)=>{
