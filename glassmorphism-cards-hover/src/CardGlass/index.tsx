@@ -3,12 +3,13 @@ import {CardGlassWrapper} from './style'
 
 type CardGlassProp = {
     children?: ReactNode
+    rotation?: number
 }
 
-const CardGlass :  React.FC<CardGlassProp> = ({children}:CardGlassProp)=>{
+const CardGlass :  React.FC<CardGlassProp> = (prop:CardGlassProp)=>{
     return (
-        <CardGlassWrapper>
-            {children}
+        <CardGlassWrapper rotation={prop.rotation}>
+            {prop.children}
         </CardGlassWrapper>
     )
 }
