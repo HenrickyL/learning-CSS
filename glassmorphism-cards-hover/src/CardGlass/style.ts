@@ -39,7 +39,4 @@ export const CardGlassWrapper = styled.div<CardGlassWrapperProp>`
         align-items: center;
         color: #fff;
     }
-    
-    & > ${IconSty}{
-    }
 `

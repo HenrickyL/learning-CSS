@@ -9,16 +9,18 @@ import {faPenToSquare as Pen,
 import { useState } from 'react'
 
 type CardGlassOptions = {
-  rotation: number,
-  text: string,
-  icon: IconDefinition
+  rotation?: number,
+  text?: string,
+  icon?: IconDefinition
 }
 
 const myCards : CardGlassOptions[] = [
   {rotation:-15, text: 'Design', icon:Pen},
   {rotation:5, text: 'Code', icon:Code},
   {rotation:25, text: 'Launch', icon:Rocket},
-  {rotation:-15, text: 'Earn', icon:Money}
+  {rotation:-15, text: 'Earn', icon:Money},
+  {}
+
 ]
 
 function App() {
