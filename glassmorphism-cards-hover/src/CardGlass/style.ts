@@ -1,9 +1,16 @@
 import {styled} from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type CardGlassWrapperProp = {
     rotation?: number
     text?: string
 }
+
+export const IconSty = styled(FontAwesomeIcon)`
+    font-size: 4rem;
+    color: #fff;
+`
+
 export const CardGlassWrapper = styled.div<CardGlassWrapperProp>`
     position: relative;
     width: 12.5rem;
@@ -33,4 +40,6 @@ export const CardGlassWrapper = styled.div<CardGlassWrapperProp>`
         color: #fff;
     }
     
+    & > ${IconSty}{
+    }
 `

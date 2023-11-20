@@ -1,10 +1,11 @@
 import React, { ReactNode } from 'react';
-import {CardGlassWrapper} from './style'
+import {CardGlassWrapper, IconSty} from './style'
+import {faQuestion,IconDefinition} from '@fortawesome/free-solid-svg-icons'
 
 type CardGlassProp = {
-    children?: ReactNode
     rotation?: number
     text?: string
+    icon?: IconDefinition
 }
 
 const CardGlass :  React.FC<CardGlassProp> = (prop:CardGlassProp)=>{
@@ -13,7 +14,7 @@ const CardGlass :  React.FC<CardGlassProp> = (prop:CardGlassProp)=>{
             rotation={prop.rotation}
             text={prop.text}
         >
-            {prop.children}
+            <IconSty icon={prop.icon || faQuestion}/>:
         </CardGlassWrapper>
     )
 }
