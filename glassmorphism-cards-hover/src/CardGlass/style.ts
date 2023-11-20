@@ -2,6 +2,7 @@ import {styled} from 'styled-components'
 
 type CardGlassWrapperProp = {
     rotation?: number
+    text?: string
 }
 export const CardGlassWrapper = styled.div<CardGlassWrapperProp>`
     position: relative;
@@ -18,4 +19,18 @@ export const CardGlassWrapper = styled.div<CardGlassWrapperProp>`
     transition: 0.5s;
     margin: 0 -2.813rem;
     transform: rotate(calc(${prop => prop.rotation || 0} * 1deg));
+
+    &::before{
+        content: "${prop=>prop.text || "default"}";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+        background-color: rgba(255,255,255,0.05);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+    
 `
