@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import {CardGlassWrapper, IconSty} from './style'
 import {faQuestion,IconDefinition} from '@fortawesome/free-solid-svg-icons'
 

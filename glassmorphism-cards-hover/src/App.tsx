@@ -22,7 +22,7 @@ const myCards : CardGlassOptions[] = [
 ]
 
 function App() {
-  const [cards,setCards] = useState<CardGlassOptions[]>(myCards)
+  const [cards] = useState<CardGlassOptions[]>(myCards)
   return (
     <>
      <Container>
