@@ -15,5 +15,7 @@
 * [CSS Clip Path Maker](https://bennettfeely.com/clippy/)
   -
 
+![](public/demo.gif)
+
 
 - reference: [Simple CSS Sci-Fi Card and Hover Effect - online tutorials](https://youtu.be/HczHaYdxHOg)
