@@ -5,7 +5,6 @@ import {SciFiCard} from './components/SciFiCard'
 import {faBrush as Brush,
   faCode as Code, 
   faRocket as Rocket, 
-  faMoneyCheckDollar as Money,
   IconDefinition} from '@fortawesome/free-solid-svg-icons'
 
 
@@ -28,7 +27,8 @@ function App() {
   return (
     <>
       <Container>
-        {cards.map(card=> <SciFiCard title={card.title} content={card.content} color={card.color} icon={card.icon}/>)}
+        {cards.map(card=> 
+          <SciFiCard title={card.title} content={card.content} color={card.color} icon={card.icon}/>)}
       </Container>
     </>
   )
