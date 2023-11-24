@@ -5,5 +5,7 @@ export const ContainerWrapper  = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 9rem;
+    flex-wrap: wrap;
 `
 
